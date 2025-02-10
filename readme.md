@@ -5,6 +5,7 @@ Swissmote is a backend API for event management, allowing users to create, manag
 ## Table of Contents
 
 - [Deployment](#deployment)
+- [Test_User_Credentials](#test-user-credentials)
 - [Installation](#installation)
 - [API Endpoints](#api-endpoints)
   - [Authentication](#authentication)
@@ -16,10 +17,10 @@ Swissmote is a backend API for event management, allowing users to create, manag
 
 ## Deployment
 
-Backend Deployed (Render) - https://swissmote-ulst.onrender.com
+Backend Deployed (Render) - https://swissmote-ulst.onrender.com  
 Frontend Deployed (Netfliy) - https://ornate-sunshine-d2e02f.netlify.app/
 
-## Test User Credentials
+## Test_User_Credentials
 
 Email : badgujarjayesh02@gmail.com  
 Password : 12345678
