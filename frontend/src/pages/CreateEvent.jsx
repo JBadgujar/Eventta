@@ -51,7 +51,7 @@ export default function CreateEvent() {
         headers: { 'Content-Type': 'multipart/form-data' }
       })
       // console.log()
-      window.location.href = `/events/${data.event._id}`;
+      navigate(`/events/${data.event._id}`);
     } catch (error) {
       setError(error.response?.data?.message || error.message)
     } finally {
