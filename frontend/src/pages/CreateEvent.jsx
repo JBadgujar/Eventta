@@ -52,6 +52,7 @@ export default function CreateEvent() {
       })
       // console.log()
       navigate(`/events/${data.event._id}`);
+      window.location.reload(); 
     } catch (error) {
       setError(error.response?.data?.message || error.message)
     } finally {

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import {
   Box,
   Typography,
@@ -66,8 +66,6 @@ export default function EventDetails() {
 
   }, [id]);
 
-
-  
   const handleJoin = async () => {
     if (event.attendees.includes(user._id)) return; // Prevent multiple joins
   
@@ -92,6 +90,7 @@ export default function EventDetails() {
       setEditMode(false);
       
       navigate(`/events/${id}`);
+      window.location.reload(); // Hard refresh after navigate
 
     } catch (error) {
       setError(error.message);
@@ -101,7 +100,7 @@ export default function EventDetails() {
   const handleDelete = async () => {
     try {
       await api.delete(`/events/${id}`);
-      window.location.href = '/' // Redirect to home after deletion
+      navigate('/'); // Redirect to home after deletion
     } catch (error) {
       setError(error.message);
     }
