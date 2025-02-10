@@ -1,5 +1,5 @@
 import Event from '../models/Event.js';
-import {uploadOnCloudinary} from '../utils/fileupload.js';
+import {uploadOnCloudinary} from '../utils/fileUpload.js';
 
 
 
