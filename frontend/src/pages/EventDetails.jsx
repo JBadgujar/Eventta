@@ -91,7 +91,7 @@ export default function EventDetails() {
       setEvent(data);
       setEditMode(false);
       
-      window.location.href = `/events/${id}`;
+      navigate(`/events/${id}`);
 
     } catch (error) {
       setError(error.message);
