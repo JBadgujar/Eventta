@@ -1,6 +1,6 @@
-# Swissmote
+# Eventta
 
-Swissmote is a backend API for event management, allowing users to create, manage, and join events. It provides authentication and user profile management functionalities.
+Eventta is a backend API for event management, allowing users to create, manage, and join events. It provides authentication and user profile management functionalities.
 
 ## Table of Contents
 
@@ -33,7 +33,7 @@ Password : 12345678
 1. Clone the repository:
    ```bash
    git clone https://github.com/JBadgujar/swissmote.git
-   cd swissmote/backend
+   cd eventta/backend
    ```
 2. Install dependencies:
    ```bash
